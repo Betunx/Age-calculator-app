@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url(/assets/fonts/Poppins-Bold.ttf);
+
+    font-family: 'Poppins-boldi';
+    src: url(/assets/fonts/Poppins-BoldItalic.ttf);
+
+    font-family: 'Poppins-eb';
+    src: url(/assets/fonts/Poppins-ExtraBold.ttf);
+
+    font-family: 'Poppins-italic';
+    src: url(/assets/fonts/Poppins-Italic.ttf);
+}
+
 html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -17,19 +30,24 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    width: 90vw;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
 }
 
 
-.titles {
+.titlesbox {
     display: flex;
+    flex-direction: row;
     color: gray;
-    justify-content: space-evenly;
+
 }
 
 .inputs {
     display: flex;
-    color: gray;
-    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 
@@ -38,20 +56,62 @@ body {
     .content {
         display: flex;
         justify-content: center;
-        align-content: center;
-        justify-items: center;
-        width: 90%;
-        height: 55%;
-        margin-top: 20%;
-        margin-bottom: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0px;
-        overflow: hidden;
+        margin-top: 10%;
+        margin-bottom: 30%;
+        height: auto;
     }
 
-    .titles {
-        font-size: 24px;
+    .titlesbox {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .titleday,
+    .titlemonth,
+    .titleyear {
+        font-family: 'Poppins-boldi';
+        font-weight: 800;
+        font-size: 14px;
+    }
+
+    .titleday {
+        margin-left: 5%;
+    }
+
+    .titlemonth {
+        margin-left: 5%;
+    }
+
+    .titleyear {
+        margin-right: 15%;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 40px 0px;
+        width: 100%;
+    }
+
+    .inputday,
+    .inputmonth,
+    .inputyear {
+        font-family: 'Popins-boldi';
+        font-weight: 800;
+        font-size: 26px;
+        color: black;
+        width: 80px;
+        height: 40px;
+    }
+
+    .inputday {
+        margin-left: 7%;
+    }
+
+    .inputyear {
+        margin-right: 6%;
     }
 
     .centercont {
