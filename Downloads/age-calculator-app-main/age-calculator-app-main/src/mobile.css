@@ -23,26 +23,26 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(189, 185, 185);
+    background-color: rgb(189, 185, 185, 0.3);
 }
 
 .content {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 90vw;
-    height: 65vh;
+    width: 90%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
 }
-
 
 .titlesbox {
     display: flex;
     flex-direction: row;
-    color: gray;
+}
 
+h3 {
+    color: rgb(116, 116, 116);
 }
 
 .inputs {
@@ -55,25 +55,29 @@ body {
 @media only screen and (min-width:300px) and (max-width:800px) {
     .content {
         display: flex;
-        justify-content: center;
-        margin-top: 10%;
-        margin-bottom: 30%;
-        height: auto;
+        margin-top: 15%;
+        margin-bottom: 20%;
+        height: 60%;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 25%;
+        padding-top: 10%;
     }
 
     .titlesbox {
         display: flex;
         justify-content: space-between;
-        margin-top: 10%;
         width: 100%;
     }
 
     .titleday,
     .titlemonth,
     .titleyear {
-        font-family: 'Poppins-boldi';
+        font-family: 'Poppins-bold';
         font-weight: 800;
-        font-size: 14px;
+        font-size: 12px;
+        letter-spacing: 3px;
     }
 
     .titleday {
@@ -100,10 +104,13 @@ body {
     .inputyear {
         font-family: 'Popins-boldi';
         font-weight: 800;
-        font-size: 26px;
+        font-size: 24px;
         color: black;
         width: 80px;
         height: 40px;
+        border-color: rgb(128, 128, 128, 0.2);
+        border-radius: 6%;
+        text-align: center;
     }
 
     .inputday {
@@ -115,25 +122,43 @@ body {
     }
 
     .centercont {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .line {
-        width: 90%;
-        height: 1px;
-        background-color: gray;
-        color: gray;
+        position: relative;
     }
 
     .arrowimg {
-        display: flex;
-        align-self: center;
-        width: 100px;
-        height: 100px;
+        position: absolute;
+        z-index: 1;
+        width: 15%;
+        left: 42%;
+        cursor: pointer;
     }
 
+    .line {
+        margin-top: 7.5%;
+        width: 90%;
+        height: 1px;
+        background-color: rgb(128, 128, 128, 0.5);
+        color: rgb(128, 128, 128, .1);
+    }
+
+    .results {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 10%;
+        width: 90%;
+    }
+
+    h1 {
+        font-family: 'Poppins-boldi';
+        font-weight: 800i;
+        font-size: 45px;
+        margin: 0;
+
+    }
 }
+
 
 @media only screen and (min-width:801px) and (max-width:1200px) {}
 
