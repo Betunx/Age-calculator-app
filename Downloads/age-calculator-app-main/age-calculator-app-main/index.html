@@ -18,20 +18,31 @@
     </div>
 
     <div class="inputs">
-      <input class="inputday" type="number" name="day" id="day">
-      <input class="inputmonth" type="number" name="month" id="month">
-      <input class="inputyear" type="number" name="year" id="year">
+      <input class="inputday" type="number" name="day" id="dayy" placeholder="DD">
+      <input class="inputmonth" type="number" name="month" id="monthh" placeholder="MM">
+      <input class="inputyear" type="number" name="year" id="yearr" placeholder="YYYY">
     </div>
 
     <div class="centercont">
-      <img class="arrowimg" src="./assets/images/abajo.png" alt="Enter">
+      <img id="jsimg" class="arrowimg" src="./assets/images/abajo.png" alt="Enter">
       <hr class="line">
     </div>
 
     <div class="results">
-      <h1>{{years}}Years</h1>
-      <h1>{{years}}Months</h1>
-      <h1>{{years}}Days</h1>
+      <div class="contenedory">
+        <h1 id="y"></h1>
+        <h1>years</h1>
+      </div>
+
+      <div class="contenedory">
+        <h1 id="m"></h1>
+        <h1>months</h1>
+      </div>
+
+      <div class="contenedory">
+        <h1 id="d"></h1>
+        <h1>days</h1>
+      </div>
     </div>
 
   </main>
